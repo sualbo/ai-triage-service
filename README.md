@@ -88,7 +88,7 @@ python -m venv .venv
 Активация на Windows PowerShell:
 
 ```bash
-.venv\Scripts\Activate.ps1
+.venv\scripts\activate.ps1
 ```
 
 Активация на macOS / Linux:
