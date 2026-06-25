@@ -1,0 +1,6 @@
+2026-06-25 11:37:44 | INFO | ai_triage_service | SQLite initialized at data/tickets.db
+2026-06-25 11:37:44 | INFO | ai_triage_service | AI Triage Service started in local mode
+2026-06-25 11:38:54 | INFO | ai_triage_service | Incoming triage request: client_id=demo_client_001 channel=email text_len=102
+2026-06-25 11:38:54 | INFO | ai_triage_service | Calling OpenAI model=gpt-4.1-mini
+2026-06-25 11:38:57 | INFO | ai_triage_service | OpenAI result validated: category=billing confidence=high escalate=False
+2026-06-25 11:38:57 | INFO | ai_triage_service | Ticket saved: id=1 client_id=demo_client_001 category=billing confidence=high escalate=False error=False

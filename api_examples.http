@@ -1,0 +1,31 @@
+### Health check
+GET http://127.0.0.1:8000/health
+
+### Triage: billing
+POST http://127.0.0.1:8000/triage
+Content-Type: application/json
+
+{
+  "text": "Здравствуйте, я оплатил заказ, но доступ к курсу не открылся.",
+  "channel": "email",
+  "client_id": "client_001"
+}
+
+### Triage: complaint
+POST http://127.0.0.1:8000/triage
+Content-Type: application/json
+
+{
+  "text": "Я очень недоволен поддержкой. Деньги списали, ответа нет уже три дня.",
+  "channel": "chat",
+  "client_id": "client_002"
+}
+
+### Validation error: text is too long or missing
+POST http://127.0.0.1:8000/triage
+Content-Type: application/json
+
+{
+  "channel": "form",
+  "client_id": "client_003"
+}
